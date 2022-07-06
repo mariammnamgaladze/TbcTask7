@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:id="@+id/scrollView" >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_field_name"
+            android:minHeight="48dp"
+            android:textColorHint="#000000"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/field_is_numeric" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_filed"
+            android:layout_gravity="center"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linearLayout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
